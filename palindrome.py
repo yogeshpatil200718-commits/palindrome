@@ -1,6 +1,8 @@
-string = input("Enter a string: ")
+import sys
 
-if string == string[::-1]:
-    print(string, "is a palindrome")
+word = sys.argv[1]
+
+if word == word[::-1]:
+    print("Palindrome")
 else:
-    print(string, "is not a palindrome")
+    print("Not Palindrome")
